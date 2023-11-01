@@ -1,0 +1,155 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.2em;
+    font-size: 1.5em;
+}
+.logo .heading1{
+    margin-left: 1.5em;
+    color: white;
+    font-weight: bolder;
+}
+.logo .heading2{
+    margin-left: 0.5em;
+    font-weight: bolder;
+    color: #f36100;
+}
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    padding: 12px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Rubik', sans-serif;
+}
+.ullist{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.8em;
+    margin-left: 7em;
+}
+.ullist li{
+    list-style: none;
+}
+.ullist li a{
+    text-decoration: none;
+    padding: 10px 2em;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+.ullist li a:hover{
+    text-decoration:overline;
+    color: #f36100;
+    transition: 0.55s;
+}
+.contactImg h1::before{
+    background: url('../images/victor-freitas-WvDYdXDzkhs-unsplash.jpg') no-repeat center center/cover;
+    content: "";
+    width:100%;
+    height: 70%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    opacity: 0.25;
+}
+#contact h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+#contact{
+    position: relative;
+    top:30em;
+    color: white;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 35%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.btnsubmit{
+    background-color: #f36100;
+    color:white;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+}
+
+footer{
+    background-color: white;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3em;
+    position: relative;
+    top:25em;
+    text-align: center;
+}
+
+.loader{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: opacity 0.9s,visibility 0.9s;
+}
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after{
+    content: "";
+    width:75px;
+    height:75px;
+    border:15px solid #ccbeb5;
+    border-top-color: #f36100 ;
+    border-radius: 50%;
+    animation:loading 0.9s ease infinite;
+}
+@keyframes loading {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(2turn);
+    }
+}

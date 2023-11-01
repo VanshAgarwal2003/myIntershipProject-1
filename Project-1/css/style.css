@@ -1,0 +1,263 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav::before{
+    content: "";
+    background: url('../images/anastase-maragos-IZw5zLHMfd4-unsplash.jpg') no-repeat center center/cover;
+    width:100vw;
+    height: 150vh;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.2em;
+    font-size: 1.5em;
+}
+.logo .heading1{
+    margin-left: 1.5em;
+    color: white;
+    font-weight: bolder;
+}
+.logo .heading2{
+    margin-left: 0.5em;
+    font-weight: bolder;
+    color: #f36100;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Rubik', sans-serif;
+}
+.ullist{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.8em;
+    margin-left: 10em;
+}
+.ullist li{
+    list-style: none;
+}
+.ullist li a{
+    text-decoration: none;
+    padding: 10px 2em;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+.ullist li a:hover{
+    text-decoration:overline;
+    color: #f36100;
+    transition: 0.55s;
+}
+.content-part{
+    text-align: center;
+    height:20em;
+    width:50vw;
+    position: relative;
+    top:9em;
+    left:-14em;
+}
+.content-part .head-1{
+    color:white;
+}
+.content-part .head-2{
+    color: #f36100;
+}
+.content-part h3{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:550s;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+}
+.content-part .head-3{
+    color: white;
+    position: relative;
+    left:-2.15em;
+    top:1.5em;
+    
+}
+.head-divison{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    height:20em;
+    width:80vw;
+    font-weight: 900;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top:-3em;
+    left:-11.2em;
+}
+.head-divison h1{
+    padding: 10px 15px;
+    font-size: 4em;
+    position: relative;
+    left:3.6em;
+}
+
+.services-head::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.975);
+    width:100vw;
+    height: 60vh;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+.services-head{
+     position: relative;
+     top:59em;
+}
+.services-head h2{
+    color: #f36100;
+    font-size: 1em;
+    letter-spacing: 2px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    position: relative;
+    top:3em;
+}
+.services-head h1{
+    color: white;
+    font-size: 2em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    position: relative;
+    top:1.2em;
+}
+.services .boxes{
+    color: white;
+    position: relative;
+    top:59em;
+}
+.boxes{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Rubik', sans-serif;
+}
+.boxes h1{
+    font-size: 1.5em;
+    font-weight: bolder;
+    transition: 0.4s;
+    color: #f36100;
+    letter-spacing: 1px;
+}
+.boxes #box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:36%;
+    height: 40vh;
+    position: relative;
+    left:15px;
+    top:5px;
+    text-align: center;
+}
+.boxes #box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:36%;
+    height: 40vh;
+    position: relative;
+    left:15px;
+    top:5px;
+    text-align: center;
+}
+.boxes #box3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:36%;
+    height: 40vh;
+    position: relative;
+    left:15px;
+    top:5px;
+    text-align: center;
+}
+.boxes #box4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:36%;
+    height: 40vh;
+    position: relative;
+    left:15px;
+    top:5px;
+    text-align: center;
+}
+
+.boxes h1:hover{
+  color: white;
+  border-radius: 6px;
+  border: 2px solid #f36100;
+  padding: 10px 30px;
+}
+.boxes h1:hover{
+    color: white;
+}
+.boxes h1:hover{
+    color: white;
+}
+.boxes h1:hover{
+   color: white;
+}
+
+footer{
+    background-color: white;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3em;
+    position: relative;
+    top:31.5em;
+    text-align: center;
+    width: 100vw;
+}
+.loader{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: opacity 0.9s,visibility 0.9s;
+}
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after{
+    content: "";
+    width:75px;
+    height:75px;
+    border:15px solid #ccbeb5;
+    border-top-color: #f36100 ;
+    border-radius: 50%;
+    animation:loading 0.9s ease infinite;
+}
+@keyframes loading {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(2turn);
+    }
+}
